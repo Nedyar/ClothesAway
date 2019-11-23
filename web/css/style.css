@@ -1811,4 +1811,27 @@ ul.product-categories li a {
 	line-height: 1.6em;
 }
 }
+
+/*Barra de recomendaciones */
+.barraRecomendaciones {
+	background: rgba(153, 153, 153, 0.49);
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	justify-content: space-around;
+	margin-bottom: 5px;
+	padding: 9px;
+}
+body>form>div>label {
+	font-size: 15px;
+	margin:0 5px 0 5px;
+}
+#botonBarraRecom {
+	border:0;
+	background: #d6626a;
+}
+select {
+	margin:0 5px 0 -5px;
+
+}
 /*---- responsive-design -----*/
