@@ -1811,3 +1811,35 @@ ul.product-categories li a {
 }
 }
 /*---- responsive-design -----*/
+
+
+
+
+/*-------------- DANI ----------------*/
+
+.perfil-usuario
+{
+	margin: auto;
+	margin-top: 1.5em;
+	text-align: center;
+}
+	
+	.perfil-usuario>img
+	{
+		margin-bottom: 1em;
+	}
+
+.nom-edit
+{
+	display: inline-block;
+
+}
+
+.punt-perfil
+{
+	margin: auto;
+	margin-top: 1em;
+	width: 500px;
+	border-top: 1px solid black;
+}
+
