@@ -1,7 +1,13 @@
+<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Perfil-Tienda</title>
+  <title>Products</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- Custom Theme files -->
   <!--theme-style-->
   <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /><!--//theme-style-->
@@ -11,7 +17,7 @@
   <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic' rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
   <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery-1.11.0.min.js"></script>
   <!-- Custom Theme files -->
   <!--theme-style-->
@@ -45,7 +51,7 @@
 		$().UItoTop({ easingType: 'easeOutQuart' });
 		
 	});
-  </script>	
+  </script>
 </head>
 <body>
   <!--top-header-->
@@ -83,7 +89,7 @@
           <li class="grid">
             <a href="index.html">Home</a>
           </li>
-          <li class="grid">
+          <li class="active">
             <a href="filtros.html">Buscador</a>
           </li>
           <li class="grid">
@@ -238,7 +244,7 @@
               </div>
             </div>
           </li>
-          <li class="active">
+          <li class="grid">
             <a href="perfil.html">Mi cuenta</a>
           </li>
         </ul>
@@ -251,43 +257,260 @@
     <div class="container">
       <div class="breadcrumbs-main">
         <ol class="breadcrumb">
-          <li class="grid">
-            <a href="perfil.html">Mi cuenta</a>
+          <li>
+            <a href="index.html">Home</a>
           </li>
-          <li class="active">Perfil Distribuidor</li>
+          <li class="active">Buscador</li>
         </ol>
       </div>
     </div>
-  </div>
-  <div class="perfil-usuario">
-    <img src="images/perfil-tienda.png" alt="tienda face" height="270" width="270" />
-    <div class="nom-edit">
-      <p style="font-size: 40px">Victoria Alar Ropa</p>
-      <div class="datos-personales">
-        <h3>DATOS DE CONTACTO</h3>
-        <p><b>Número de teléfono:</b> +34 613322347</p>
-        <p><b>Correo electrónico:</b> victoria_ala@gmail.com</p>
+  </div><!--end-breadcrumbs-->
+  <!-- Barra de búsqueda para las recomendaciones -->
+  <form action="filtros.html">
+    <div class="barraRecomendaciones">
+      <label>¿Dónde vas a viajar? <input type="input" placeholder="Destino" /></label> <label>Ida <input type="date" id="start" name="trip-start" /></label> <label>Vuelta <input type="date" id="start" name="trip-start" /></label> <label for="sel1">Género</label> <select id="sel1" style="width: 10%;">
+        <option>
+          ------
+        </option>
+        <option>
+          Mujer
+        </option>
+        <option>
+          Hombre
+        </option>
+        <option>
+          Niña
+        </option>
+        <option>
+          Niño
+        </option>
+      </select> <label for="precio1">Precio max</label> <select id="precio1">
+        <option>
+          --
+        </option>
+        <option>
+          5
+        </option>
+        <option>
+          10
+        </option>
+        <option>
+          15
+        </option>
+        <option>
+          20
+        </option>
+      </select> <label for="precio2">Precio min</label> <select id="precio2">
+        <option>
+          --
+        </option>
+        <option>
+          5
+        </option>
+        <option>
+          10
+        </option>
+        <option>
+          15
+        </option>
+        <option>
+          20
+        </option>
+      </select> <label for="precio3">Ordenar por:</label> <select id="precio3">
+        <option>
+          -----------------
+        </option>
+        <option>
+          Valoraciones
+        </option>
+        <option>
+          Precio Ascendente
+        </option>
+        <option>
+          Precio Descente
+        </option>
+        <option>
+          Recientes
+        </option>
+      </select> <button class="btn btn-danger" id="botonBarraRecom">BUSCAR</button>
+    </div>
+  </form><!--start-product-->
+  <div class="product">
+    <div class="container">
+      <div class="product-main">
+        <div class="col-md-9 p-left">
+          <div class="product-one">
+            <div class="col-md-4 product-left single-left">
+              <div class="p-one simpleCart_shelfItem">
+                <a href="single.html"><img src="images/shoes-1.png" alt="" />
+                <div class="mask">
+                  <span>Detalles</span>
+                </div></a>
+                <h4>Adidas Advan...</h4>
+                <p><a class="item_add" href="#"><i></i> <span class="item_price">3,24€/día</span></a></p>
+              </div>
+            </div>
+            <div class="col-md-4 product-left single-left">
+              <div class="p-one simpleCart_shelfItem">
+                <a href="single.html"><img src="images/SikSilk.jpg" alt="" />
+                <div class="mask">
+                  <span>Detalles</span>
+                </div></a>
+                <h4>Vaqueros SikSilk</h4>
+                <p><a class="item_add" href="#"><i></i> <span class="item_price">2,43€/día</span></a></p>
+              </div>
+            </div>
+            <div class="col-md-4 product-left single-left">
+              <div class="p-one simpleCart_shelfItem">
+                <a href="single.html"><img src="images/IllusiveLondon.jpg" alt="" />
+                <div class="mask">
+                  <span>Detalles</span>
+                </div></a>
+                <h4>Illusive London</h4>
+                <p><a class="item_add" href="#"><i></i> <span class="item_price">4,11€/día</span></a></p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="product-one">
+            <div class="col-md-4 product-left single-left">
+              <div class="p-one simpleCart_shelfItem">
+                <a href="single.html"><img src="images/Hippilongui.JPG" alt="" />
+                <div class="mask">
+                  <span>Detalles</span>
+                </div></a>
+                <h4>Camisa Estampado...</h4>
+                <p><a class="item_add" href="#"><i></i> <span class="item_price">1,99€/día</span></a></p>
+              </div>
+            </div>
+            <div class="col-md-4 product-left single-left">
+              <div class="p-one simpleCart_shelfItem">
+                <a href="single.html"><img src="images/patinador.jpg" alt="" />
+                <div class="mask">
+                  <span>Detalles</span>
+                </div></a>
+                <h4>Falda de patinador</h4>
+                <p><a class="item_add" href="#"><i></i> <span class="item_price">2,07€/día</span></a></p>
+              </div>
+            </div>
+            <div class="col-md-4 product-left single-left">
+              <div class="p-one simpleCart_shelfItem">
+                <a href="single.html"><img src="images/botas.jpg" alt="" />
+                <div class="mask">
+                  <span>Detalles</span>
+                </div></a>
+                <h4>Botas lindo gatito</h4>
+                <p><a class="item_add" href="#"><i></i> <span class="item_price">3,56€/día</span></a></p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="product-one">
+            <div class="col-md-4 product-left single-left">
+              <div class="p-one simpleCart_shelfItem">
+                <a href="single.html"><img src="images/gorrito.jpg" alt="" />
+                <div class="mask">
+                  <span>Detalles</span>
+                </div></a>
+                <h4>Gorro Beechfield</h4>
+                <p><a class="item_add" href="#"><i></i> <span class="item_price">0,38€/día</span></a></p>
+              </div>
+            </div>
+            <div class="col-md-4 product-left single-left">
+              <div class="p-one simpleCart_shelfItem">
+                <a href="single.html"><img src="images/jersey.jpg" alt="" />
+                <div class="mask">
+                  <span>Detalles</span>
+                </div></a>
+                <h4>Jersey Estampado</h4>
+                <p><a class="item_add" href="#"><i></i> <span class="item_price">3,94€/día</span></a></p>
+              </div>
+            </div>
+            <div class="col-md-4 product-left single-left">
+              <div class="p-one simpleCart_shelfItem">
+                <a href="single.html"><img src="images/zapatos.png" alt="" />
+                <div class="mask">
+                  <span>Detalles</span>
+                </div></a>
+                <h4>Adidas Toflamas</h4>
+                <p><a class="item_add" href="#"><i></i> <span class="item_price">3,24€/día</span></a></p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="col-md-3 p-right single-right">
+          <h3>Prendas</h3>
+          <ul class="product-categories">
+            <li>
+              <a href="#">Camisetas</a> <span class="count">(34)</span>
+            </li>
+            <li>
+              <a href="#">Camisas</a> <span class="count">(23)</span>
+            </li>
+            <li>
+              <a href="#">Pantalones</a> <span class="count">(21)</span>
+            </li>
+            <li>
+              <a href="#">Calzados</a> <span class="count">(52)</span>
+            </li>
+            <li>
+              <a href="#">Accesorios</a> <span class="count">(31)</span>
+            </li>
+            <li>
+              <a href="#">Chaquetas</a> <span class="count">(27)</span>
+            </li>
+            <li>
+              <a href="#">Otros</a> <span class="count">(150)</span>
+            </li>
+          </ul>
+          <h3>Categorías</h3>
+          <ul class="product-categories">
+            <li>
+              <a href="#">Hombre</a> <span class="count">(142)</span>
+            </li>
+            <li>
+              <a href="#">Mujer</a> <span class="count">(236)</span>
+            </li>
+            <li>
+              <a href="#">Unisex</a> <span class="count">(14)</span>
+            </li>
+            <li>
+              <a href="#">Niños</a> <span class="count">(18)</span>
+            </li>
+            <li>
+              <a href="#">Niñas</a> <span class="count">(24)</span>
+            </li>
+            <li>
+              <a href="#">Accesorios</a> <span class="count">(150)</span>
+            </li>
+          </ul>
+          <h3>Marcas</h3>
+          <ul class="product-categories">
+            <li>
+              <a href="#">Levis</a> <span class="count">(142)</span>
+            </li>
+            <li>
+              <a href="#">Nike</a> <span class="count">(236)</span>
+            </li>
+            <li>
+              <a href="#">New Balance</a> <span class="count">(14)</span>
+            </li>
+            <li>
+              <a href="#">Jack and Jones</a> <span class="count">(18)</span>
+            </li>
+            <li>
+              <a href="#">Paul Smith</a> <span class="count">(24)</span>
+            </li>
+            <li>
+              <a href="#">Ray-Ban</a> <span class="count">(150)</span>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
       </div>
     </div>
-    <div class="descripcion-perfil">
-      <h3>DESCRIPCIÓN</h3>
-      <p style="font-size: 15px">Somos un comercio local de Torrevieja donde encontrarás ropa elegante y coqueta tanto de hombre como de mujer.</p>
-    </div>
-    <div class="punt-perfil">
-    <h3>PUNTUACIÓN DE LOS USUARIOS</h3><img src="images/estrellas.png" alt="Puntación" height="30" width="137" /></div>
-    <div class="comentarios">
-      <h3>COMENTARIOS</h3>
-      <div class="comentario">
-        <div class="coment">
-          <img src="images/perfil.png" alt="Coment face" height="70" width="70" />
-          <p style="font-size: 20px"><b>Ana Muñoz García</b></p>
-        </div>
-        <div class="opinion">
-          <p>La ropa estaba muy limpia y el servicio ha sido muy bueno, me lo han llevado al hotel a tiempo.</p>
-        </div>
-      </div>
-    </div>
-  </div><!--end-account-->
+  </div><!--end-product-->
   <!--start-footer-->
   <hr />
   <hr />
