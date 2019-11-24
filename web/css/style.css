@@ -1834,4 +1834,68 @@ select {
 	margin:0 5px 0 -5px;
 
 }
+
 /*---- responsive-design -----*/
+
+
+
+
+/*-------------- DANI ----------------*/
+
+.perfil-usuario
+{
+	margin: auto;
+	margin-top: 1.5em;
+	text-align: center;
+}
+	
+	.perfil-usuario>img
+	{
+		margin-bottom: 1em;
+	}
+
+.nom-edit
+{
+	display: inline-block;
+
+}
+
+.punt-perfil
+{
+	margin: auto;
+	margin-top: 1em;
+	width: 500px;
+	border-top: 1px solid black;
+}
+
+
+.comentarios
+{
+	width: 500px;
+	margin: auto;
+	margin-top: 2em;
+}
+
+.coment
+{
+	display: inline-flex;
+}
+	.coment>img
+	{
+		margin-right: 2em;
+	}
+
+.comentario
+{
+	border-radius: 6px;
+	border: 1px solid grey;
+	padding: .5em;
+}
+
+.opinion
+{
+	margin-top: 1em;
+	text-align: left;
+	background-color:#ededed;
+	padding-left: .3em;
+}
