@@ -1843,3 +1843,36 @@ ul.product-categories li a {
 	border-top: 1px solid black;
 }
 
+
+.comentarios
+{
+	width: 500px;
+	margin: auto;
+	margin-top: 2em;
+}
+
+.coment
+{
+	display: inline-flex;
+}
+	.coment>img
+	{
+		margin-right: 2em;
+	}
+
+.comentario
+{
+	border-radius: 6px;
+	border: 1px solid grey;
+	padding: .5em;
+}
+
+.opinion
+{
+	margin-top: 1em;
+	text-align: left;
+	background-color:#ededed;
+	padding-left: .3em;
+}
+
+
